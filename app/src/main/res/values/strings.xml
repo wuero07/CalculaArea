@@ -1,0 +1,7 @@
+<resources>
+<string-array name="figure_options">
+    <item>Círculo</item>
+    <item>Triángulo</item>
+    <item>Cuadrado</item>
+</string-array>
+</resources>

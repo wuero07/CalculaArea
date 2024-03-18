@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@android:color/darker_gray">
+
+    <Spinner
+        android:id="@+id/figure_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:entries="@array/figure_options" />
+
+    <EditText
+        android:id="@+id/input_radio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/figure_spinner"
+        android:hint="Radio del círculo"
+        android:inputType="numberDecimal"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/input_base"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/figure_spinner"
+        android:hint="Base del triángulo"
+        android:inputType="numberDecimal"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/input_altura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input_base"
+        android:hint="Altura del triángulo"
+        android:inputType="numberDecimal"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/input_lado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input_altura"
+        android:hint="Lado del cuadrado"
+        android:inputType="numberDecimal"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/calculate_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input_lado"
+        android:layout_marginTop="35dp"
+        android:onClick="calculateArea"
+        android:text="Calcular Área" />
+
+    <TextView
+        android:id="@+id/result_area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/calculate_button"
+        android:layout_marginTop="16dp"
+        android:text=""
+        android:textSize="18sp" />
+
+</RelativeLayout>
