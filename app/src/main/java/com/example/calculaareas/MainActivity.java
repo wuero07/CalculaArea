@@ -90,5 +90,16 @@ public class MainActivity extends AppCompatActivity {
 
         resultArea.setText(String.format("Área: %.2f", area));
     }
-}
 
+    public void clearFields(View view) {
+        inputRadius.setText("");
+        inputBase.setText("");
+        inputHeight.setText("");
+        inputSide.setText("");
+        resultArea.setText("");
+    }
+
+    public void exitApp(View view) {
+        finish();
+    }
+}

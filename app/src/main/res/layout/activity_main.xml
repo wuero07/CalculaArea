@@ -3,8 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="@android:color/darker_gray">
+    android:background="@android:color/darker_gray"
+    tools:context=".MainActivity">
 
     <Spinner
         android:id="@+id/figure_spinner"
@@ -58,12 +58,31 @@
         android:onClick="calculateArea"
         android:text="Calcular Área" />
 
-    <TextView
-        android:id="@+id/result_area"
+    <Button
+        android:id="@+id/clear_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/calculate_button"
         android:layout_marginTop="16dp"
+        android:onClick="clearFields"
+        android:text="Borrar" />
+
+    <Button
+        android:id="@+id/exit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/calculate_button"
+        android:layout_toEndOf="@id/clear_button"
+        android:layout_marginTop="16dp"
+        android:onClick="exitApp"
+        android:text="Salir" />
+
+    <TextView
+        android:id="@+id/result_area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/clear_button"
+        android:layout_marginTop="20dp"
         android:text=""
         android:textSize="18sp" />
 
