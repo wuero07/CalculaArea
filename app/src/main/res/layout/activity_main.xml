@@ -3,8 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/darker_gray"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/fonfo5">
 
     <Spinner
         android:id="@+id/figure_spinner"
@@ -56,7 +56,10 @@
         android:layout_below="@id/input_lado"
         android:layout_marginTop="35dp"
         android:onClick="calculateArea"
-        android:text="Calcular Área" />
+        android:text="Calcular Área"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"
+        />
 
     <Button
         android:id="@+id/clear_button"
