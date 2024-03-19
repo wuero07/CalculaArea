@@ -20,6 +20,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/figure_spinner"
         android:hint="Radio del círculo"
+        android:textColorHint="@color/black"
         android:inputType="numberDecimal"
         android:visibility="gone" />
 
@@ -29,6 +30,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/figure_spinner"
         android:hint="Base del triángulo"
+        android:textColorHint="@color/black"
         android:inputType="numberDecimal"
         android:visibility="gone" />
 
@@ -38,6 +40,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/input_base"
         android:hint="Altura del triángulo"
+        android:textColorHint="@color/black"
         android:inputType="numberDecimal"
         android:visibility="gone" />
 
@@ -47,6 +50,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/input_altura"
         android:hint="Lado del cuadrado"
+        android:textColorHint="@color/black"
         android:inputType="numberDecimal"
         android:visibility="gone" />
 
@@ -59,7 +63,7 @@
         android:onClick="calculateArea"
         android:text="Calcular Área"
         android:textColor="@color/black"
-        android:backgroundTint="@color/white"
+        android:backgroundTint="@color/color_azul"
         />
 
     <Button
@@ -69,7 +73,9 @@
         android:layout_below="@id/calculate_button"
         android:layout_marginTop="16dp"
         android:onClick="clearFields"
-        android:text="Borrar" />
+        android:text="Borrar"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/color_rosa"/>
 
     <Button
         android:id="@+id/exit_button"
@@ -79,7 +85,9 @@
         android:layout_toEndOf="@id/clear_button"
         android:layout_marginTop="16dp"
         android:onClick="exitApp"
-        android:text="Salir" />
+        android:text="Salir"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/color_naranja"/>
 
     <TextView
         android:id="@+id/result_area"
